@@ -1,12 +1,12 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: php.movinite.id
+  name: php.domain.com
   namespace: myphp-app
 spec:
-  secretName: php.movinite.id-tls
+  secretName: php.domain.com-tls
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
   dnsNames:
-    - "php.movinite.id"
+    - "php.domain.com"
